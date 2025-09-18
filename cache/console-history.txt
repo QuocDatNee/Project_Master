@@ -1,0 +1,13 @@
+exit
+cd C:\Users\Admin\nft-cert
+end
+back
+.
+(.venv) PS C:\Users\Admin\nft-cert>
+cd C:\Users\Admin\nft-cert
+await nft.tokenURI(0);
+// Kiểm tra tokenURI của tokenId = 0
+await nft.ownerOf(0);
+// Kiểm tra owner của tokenId = 0
+const nft = await CertNFT.attach("0x5FbDB2315678afecb367f032d93F642f64180aa3");
+const CertNFT = await ethers.getContractFactory("CertNFT");
